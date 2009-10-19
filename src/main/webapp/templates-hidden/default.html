@@ -1,81 +1,38 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    
-    <title>Lift Web Framework</title>
-    <lift:CSS.blueprint />
-    <lift:CSS.fancyType />
-    <script id="jquery" src="/classpath/jquery.js" type="text/javascript"/>
-    <script id="json" src="/classpath/json.js" type="text/javascript"/>
-    <style>
-/* <![CDATA[ */
-.sidebar ul {
-	margin:0;
-	padding:0;
-	border-bottom:1px solid #ccc;
-}
-	 
-
-.sidebar ul li {
-	margin:0;
-	padding:0;
-	list-style:none;
-	border:1px solid #ccc;
-	border-bottom:none;
-}
-
-.sidebar ul li a {
-	display:block;
-	padding:3px;
-	text-indent:30px;
-	text-decoration:none;
-}
-
-.sidebar ul li span {
-	display:block;
-	padding:3px;
-	text-indent:30px;
-	text-decoration:none;
-}
-
-.sidebar ul li a:hover {
-	background-color: #eee;
-}
-
-
-  /* ]]> */
-  </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="column span-12 last" style="text-align: right">
-        <h1 class="alt">www<img id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"/></h1>
-      </div>
-
-      <hr/>
-
-      <div class="column span-6 colborder sidebar">
-        <hr class="space" />
-        <lift:Menu.builder />	
-        <div>
-          <lift:snippet type="msgs"/>
-          <hr class="space" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Spiral Arm - Home Page</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/png" />
+        <!--[if lt IE 7]>
+        <script defer="defer" src="/js/correctPNG.js" type="text/javascript"></script>
+        <![endif]-->
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/js/script.js"></script>                
+    </head>
+    <body>
+        <div id="content">
+            <a href="/"><img id="header" src="/images/LogoB.png" alt="Spiral Arm Logo"/></a>
+            <lift:bind name="content" />
+            <div id="footer">
+                <div id="copyright">
+                    &#169; Copyright Spiral Arm Limited 2003&#8211;2009
+                </div>
+                <div id="footerlinks">
+                        <a href="/privacyStatement">Privacy Statement</a>
+                        <a href="/siteMap">Site Map</a>
+                </div>                                 
+            </div>              
         </div>
-      </div>
-
-      <div class="column span-17 last">
-        <lift:bind name="content" />
-      </div>
-
-      <hr />
-      <div class="column span-23 last" style="text-align: center">
-        <h4 class="alt">
-          <a href="http://liftweb.net"><i>Lift</i></a> 
-	  is Copyright 2007-2009 WorldWide Conferencing, LLC.  Distributed under an Apache 2.0 License.</h4>
-      </div>
-      
-    </div>
-  </body>
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        _uacct = "UA-2919380-1";
+        urchinTracker();
+        </script>        
+    </body> 
 </html>
+
+
+
+        

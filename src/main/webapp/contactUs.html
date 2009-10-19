@@ -1,0 +1,30 @@
+<lift:surround with="default" at="content">
+            <div id="breadcrumbs">
+                <a href="/">Home</a>&#8250; <a href="/view/contactUs">Contact Us</a>
+            </div>
+            <div id="contactUs">
+            <h1>Contact Us</h1>
+
+            <form action="/common/sendMessage" method="post" >
+            <fieldset>
+                <div>
+                    <label for="from">Email</label>
+                    <input type="text" name="from" size="40" value="" id="from" />
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                   <textarea cols="70" name="message" rows="10" id="message" ></textarea>
+                </div>
+
+                <div class="buttons">
+                    <input type="submit" name="_action_sendMessage" value="Send Message" />
+                </div>
+
+            </fieldset>
+
+           <p>If you prefer to talk or text, please contact Richard Dallaway on +44 1273 78 28 18</p>
+
+             </form>       
+        </div>
+</lift:surround>
