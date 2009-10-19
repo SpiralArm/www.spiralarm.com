@@ -16,13 +16,8 @@ import _root_.javax.servlet.http.{HttpServletRequest}
   */
 class Boot {
   def boot {
-
     // where to search snippet
     LiftRules.addToPackages("com.spiralarm.www")
-
-    // Build SiteMap
-    val entries = Menu(Loc("Home", List("index"), "Home")) :: User.sitemap
-    LiftRules.setSiteMap(SiteMap(entries:_*))
   }
 
 }
