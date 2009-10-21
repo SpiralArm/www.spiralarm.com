@@ -9,7 +9,7 @@ import _root_.net.liftweb.mapper.{DB, ConnectionManager, Schemifier, DefaultConn
 import _root_.java.sql.{Connection, DriverManager}
 
 import _root_.javax.servlet.http.{HttpServletRequest}
-
+ 
 /**
   * A class that's instantiated early and run.  It allows the application
   * to modify lift's environment
@@ -20,24 +20,24 @@ class Boot {
 
     // where to search snippet
     LiftRules.addToPackages("com.spiralarm.www")
-    
+
     // Build SiteMap
-	val pages = Menu(Loc("Home", List("index"), "Home",Hidden)) ::
-            Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "aboutSpiralArm", Hidden)) ::
-            Menu(Loc("howWeWork", List("howWeWork"), "howWeWork", Hidden)) ::
-            Menu(Loc("privacyStatement", List("privacyStatement"), "privacyStatement", Hidden)) ::
-            Menu(Loc("siteMap", List("siteMap"), "siteMap", Hidden)) ::
-            Menu(Loc("siteReorganized", List("siteReorganized"), "siteReorganized", Hidden)) ::
-            Menu(Loc("technologies", List("technologies"), "technologies", Hidden)) ::
-            Menu(Loc("ourWork", List("ourWork") -> true , "ourWork", Hidden)) ::         
-	   		Menu(Loc("newMobileImagingService", List("ourWork" , "newMobileImagingService"), "newMobileImagingService", Hidden)) ::   
-            Menu(Loc("pictureMessagingAtTheGuardian", List("ourWork" , "pictureMessagingAtTheGuardian"), "pictureMessagingAtTheGuardian", Hidden)) ::   
-            Menu(Loc("pictureMessagingAtTheTimes", List("ourWork" , "pictureMessagingAtTheTimes"), "pictureMessagingAtTheTimes", Hidden)) ::   
-            Menu(Loc("regionalNewspapersEmbraceMMS", List("ourWork" , "regionalNewspapersEmbraceMMS"), "regionalNewspapersEmbraceMMS", Hidden)) ::   
-            Menu(Loc("visualizingTvResearch", List("ourWork" , "visualizingTvResearch"), "visualizingTvResearch", Hidden)) ::   
-            Menu(Loc("websiteRedevelopment", List("ourWork" , "websiteRedevelopment"), "websiteRedevelopment", Hidden)) ::   
+	val pages = Menu(Loc("Home", List("index"), "Home" )) ::
+            Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "About Spiral Arm" )) ::
+            Menu(Loc("howWeWork", List("howWeWork"), "howWeWork" )) ::
+            Menu(Loc("technologies", List("technologies"), "Technologies" )) ::
+	   		Menu(Loc("newMobileImagingService", List("ourWork" , "newMobileImagingService"), "New mobile imaging service" )) ::   
+            Menu(Loc("pictureMessagingAtTheGuardian", List("ourWork" , "pictureMessagingAtTheGuardian"), "Picture messaging at The Guardian" )) ::   
+            Menu(Loc("pictureMessagingAtTheTimes", List("ourWork" , "pictureMessagingAtTheTimes"), "Picture messaging at The Times" )) ::   
+            Menu(Loc("regionalNewspapersEmbraceMMS", List("ourWork" , "regionalNewspapersEmbraceMMS"), "Regional newspapers embrace MMS" )) ::   
+            Menu(Loc("visualizingTvResearch", List("ourWork" , "visualizingTvResearch"), "Visualizing TV research" )) ::   
+            Menu(Loc("websiteRedevelopment", List("ourWork" , "websiteRedevelopment"), "Website redevelopment" )) ::
+            Menu(Loc("ourWork", List("ourWork") -> true , "Our work")) ::   
+            Menu(Loc("privacyStatement", List("privacyStatement"), "Privacy statement" )) ::
+            Menu(Loc("siteMap", List("siteMap"), "Site Map" )) ::
+            Menu(Loc("siteReorganized", List("siteReorganized"), "Site reorganized" )) ::
             Nil    
-    
+ 
     LiftRules.setSiteMap(SiteMap(pages:_*))
     LiftRules.siteMapFailRedirectLocation = "/siteReorganized.html" :: Nil
     LiftRules.uriNotFound.prepend{ case (req, _) => PermRedirectResponse("/siteReorganized.html", req)}  
