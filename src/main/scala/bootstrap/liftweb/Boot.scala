@@ -24,7 +24,7 @@ class Boot {
     // Build SiteMap
 	val pages = Menu(Loc("Home", List("index"), "Home" )) ::
             Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "About Spiral Arm" )) ::
-            Menu(Loc("howWeWork", List("howWeWork"), "howWeWork" )) ::
+            Menu(Loc("whatWeDo", List("whatWeDo"), "What we do" )) ::
             Menu(Loc("technologies", List("technologies"), "Technologies" )) ::
 	   		Menu(Loc("newMobileImagingService", List("ourWork" , "newMobileImagingService"), "New mobile imaging service" )) ::   
             Menu(Loc("pictureMessagingAtTheGuardian", List("ourWork" , "pictureMessagingAtTheGuardian"), "Picture messaging at The Guardian" )) ::   
