@@ -32,6 +32,7 @@ class Boot {
             Menu(Loc("regionalNewspapersEmbraceMMS", List("ourWork" , "regionalNewspapersEmbraceMMS"), "Regional newspapers embrace MMS" )) ::   
             Menu(Loc("visualizingTvResearch", List("ourWork" , "visualizingTvResearch"), "Visualizing TV research" )) ::   
             Menu(Loc("twitterApps", List("ourWork" , "twitterApps"), "Twitter Applications" )) ::   
+            Menu(Loc("iphoneWeb", List("ourWork" , "iphoneWeb"), "iPhone Web Apps" )) ::   
             Menu(Loc("websiteRedevelopment", List("ourWork" , "websiteRedevelopment"), "Website redevelopment" )) ::
             Menu(Loc("ourWork", List("ourWork") -> true , "Our work")) ::   
             Menu(Loc("privacyStatement", List("privacyStatement"), "Privacy statement" )) ::
