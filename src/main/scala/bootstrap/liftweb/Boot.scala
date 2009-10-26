@@ -22,8 +22,8 @@ class Boot {
     LiftRules.addToPackages("com.spiralarm.www")
 
     // Build SiteMap
-	val pages = Menu(Loc("Home", List("index"), "Home" )) ::
-            Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "About Spiral Arm" )) ::
+	val pages = Menu(Loc("Home", List("index"), "Building products and services with Scala and Lift" )) ::
+            Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "About" )) ::
             Menu(Loc("whatWeDo", List("whatWeDo"), "What we do" )) ::
             Menu(Loc("technologies", List("technologies"), "Technologies" )) ::
 	   		Menu(Loc("newMobileImagingService", List("ourWork" , "newMobileImagingService"), "New mobile imaging service" )) ::   
@@ -31,6 +31,7 @@ class Boot {
             Menu(Loc("pictureMessagingAtTheTimes", List("ourWork" , "pictureMessagingAtTheTimes"), "Picture messaging at The Times" )) ::   
             Menu(Loc("regionalNewspapersEmbraceMMS", List("ourWork" , "regionalNewspapersEmbraceMMS"), "Regional newspapers embrace MMS" )) ::   
             Menu(Loc("visualizingTvResearch", List("ourWork" , "visualizingTvResearch"), "Visualizing TV research" )) ::   
+            Menu(Loc("twitterApps", List("ourWork" , "twitterApps"), "Twitter Applications" )) ::   
             Menu(Loc("websiteRedevelopment", List("ourWork" , "websiteRedevelopment"), "Website redevelopment" )) ::
             Menu(Loc("ourWork", List("ourWork") -> true , "Our work")) ::   
             Menu(Loc("privacyStatement", List("privacyStatement"), "Privacy statement" )) ::
