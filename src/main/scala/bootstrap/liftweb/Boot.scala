@@ -10,7 +10,7 @@ import _root_.java.sql.{Connection, DriverManager}
 
 import _root_.javax.servlet.http.{HttpServletRequest}
  
-/**
+/** 
   * A class that's instantiated early and run.  It allows the application
   * to modify lift's environment
   */
