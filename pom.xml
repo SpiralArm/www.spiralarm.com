@@ -45,11 +45,6 @@
       <version>${lift.version}</version>
     </dependency>
     <dependency>
-      <groupId>net.liftweb</groupId>
-      <artifactId>lift-mapper</artifactId>
-      <version>${lift.version}</version>
-    </dependency>    
-    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
@@ -67,13 +62,13 @@
       <version>6.1.6</version>
       <scope>test</scope>
     </dependency>
-    <!-- for LiftConsole -->
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-compiler</artifactId>
       <version>${scala.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- for LiftConsole -->
   </dependencies>
 
   <build>

@@ -5,8 +5,6 @@ import _root_.net.liftweb.http._
 import _root_.net.liftweb.sitemap._
 import _root_.net.liftweb.sitemap.Loc._
 import Helpers._
-import _root_.net.liftweb.mapper.{DB, ConnectionManager, Schemifier, DefaultConnectionIdentifier, ConnectionIdentifier}
-import _root_.java.sql.{Connection, DriverManager}
 
 import _root_.javax.servlet.http.{HttpServletRequest}
  
