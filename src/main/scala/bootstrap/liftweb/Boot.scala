@@ -41,7 +41,7 @@ class Boot {
  
     LiftRules.setSiteMap(SiteMap(pages:_*))
     LiftRules.siteMapFailRedirectLocation = "/siteReorganized.html" :: Nil
-    LiftRules.uriNotFound.prepend{ case (req, _) => PermRedirectResponse("/siteReorganized.html", req)}  
+    LiftRules.uriNotFound.prepend{ case (req, _) =>  NotFoundAsResponse(PermRedirectResponse("/siteReorganized.html", req))}  
     LiftRules.exceptionHandler.prepend{ case(mode,req, throwable) =>PermRedirectResponse("siteReorganized", req)}
 
   }
