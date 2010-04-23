@@ -1,4 +1,6 @@
+.manager
 .classpath
 .project
 target
+.scala_dependencies
 

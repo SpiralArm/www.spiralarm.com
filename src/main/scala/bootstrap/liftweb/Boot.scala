@@ -24,6 +24,7 @@ class Boot {
             Menu(Loc("aboutSpiralArm", List("aboutSpiralArm"), "About" )) ::
             Menu(Loc("whatWeDo", List("whatWeDo"), "What we do" )) ::
             Menu(Loc("technologies", List("technologies"), "Technologies" )) ::
+            Menu(Loc("blogs", List("blogs"), "Blog" )) ::   
 	   		Menu(Loc("newMobileImagingService", List("ourWork" , "newMobileImagingService"), "New mobile imaging service" )) ::   
             Menu(Loc("pictureMessagingAtTheGuardian", List("ourWork" , "pictureMessagingAtTheGuardian"), "Picture messaging at The Guardian" )) ::   
             Menu(Loc("pictureMessagingAtTheTimes", List("ourWork" , "pictureMessagingAtTheTimes"), "Picture messaging at The Times" )) ::   
