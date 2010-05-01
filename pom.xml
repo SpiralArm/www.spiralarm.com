@@ -5,11 +5,11 @@
   <artifactId>www</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>www</name>
+  <name>spiralarm.com</name>
   <inceptionYear>2007</inceptionYear>
   <properties>
     <scala.version>2.7.7</scala.version>
-    <lift.version>2.0-M1</lift.version>
+    <lift.version>2.0-M2</lift.version>
   </properties>
 
   <repositories>
@@ -95,7 +95,7 @@
         <artifactId>maven-jetty-plugin</artifactId>
         <configuration>
           <contextPath>/</contextPath>
-          <scanIntervalSeconds>5</scanIntervalSeconds>
+          <scanIntervalSeconds>0</scanIntervalSeconds>
         </configuration>
       </plugin>
       <plugin>
