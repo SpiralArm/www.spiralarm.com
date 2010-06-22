@@ -1,9 +1,10 @@
 package bootstrap.liftweb
 
-import _root_.net.liftweb.util._
-import _root_.net.liftweb.http._
-import _root_.net.liftweb.sitemap._
-import _root_.net.liftweb.sitemap.Loc._
+import net.liftweb.common.Loggable
+import net.liftweb.http._
+import net.liftweb.sitemap._
+import net.liftweb.sitemap.Loc._
+import net.liftweb.util._
 import Helpers._
 
 import _root_.javax.servlet.http.{HttpServletRequest}
@@ -12,9 +13,9 @@ import _root_.javax.servlet.http.{HttpServletRequest}
   * A class that's instantiated early and run.  It allows the application
   * to modify lift's environment
   */
-class Boot {
+class Boot extends Loggable {
   def boot {
-    Log.info("RUN MODE: "+Props.mode+" on "+Props.userName+"@"+Props.hostName)
+    logger.info("RUN MODE: "+Props.mode+" on "+Props.userName+"@"+Props.hostName)
 
     // where to search snippet
     LiftRules.addToPackages("com.spiralarm.www")
