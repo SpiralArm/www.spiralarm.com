@@ -1,0 +1,151 @@
+/* @group Colour */
+
+a {
+  color: #2296FB;
+}
+
+nav {
+	border-top: 5pt solid #2296FB;
+}
+
+nav ul li {
+	background-color: #2296FB;
+	color: white;
+}
+
+a {
+	background-color: white;
+}
+
+.highlight {
+	padding: 0.5em;
+}
+
+/* @end */
+
+
+
+
+/* @group Font & text */
+
+* {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 250%;
+	font-weight: lighter;
+}
+
+h2 {
+	font-size: 125%;
+	font-weight: lighter;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: small;
+	font-weight: bolder;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: small;
+	font-weight: bolder;
+}
+
+div#logo {
+	font-size: 300%;
+	font-weight: lighter;
+}
+
+aside h1 {
+	font-size: 150%;
+}
+
+
+
+/* @end */
+
+
+
+
+/* @group spacing */
+
+* {
+	margin: 0;
+}
+
+x-section {
+	padding-bottom: 100%;
+}
+
+nav {
+	margin-bottom: 2em;
+}
+
+
+h1 {
+	margin: 40px;
+}
+
+h2 {
+	margin: 40px;
+}
+
+p {
+	margin: 40px;
+}
+
+
+
+/* @end */
+
+
+
+
+/* @group Position */
+
+#logo {
+	margin-left: 60%;	
+}
+
+/* @end */
+
+
+
+
+
+
+
+/* @group Nav */
+
+
+nav ul {
+	display: inline;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 1em;
+}
+
+
+
+/* @end */
+
+
+/* @group Aside */
+
+aside {
+}
+
+
+
+/* @end */
+
