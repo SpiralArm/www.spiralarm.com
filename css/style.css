@@ -29,13 +29,14 @@ a {
 /* @group Font & text */
 
 * {
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 14px/1.5 "Helvetica Neue";
 	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
-	font-size: 250%;
-	font-weight: lighter;
+	font: 3em/1.2 "Helvetica Neue";
+	padding-bottom: 0.25em;
 }
 
 h2 {
@@ -59,19 +60,9 @@ nav ul li {
 	font-weight: bolder;
 }
 
-div#logo {
-	font-size: 300%;
-	font-weight: lighter;
-}
-
-aside h1 {
-	font-size: 150%;
-}
-
 
 
 /* @end */
-
 
 
 
@@ -86,23 +77,33 @@ section {
 }
 
 nav {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
+}
+
+#logo {
+	margin-bottom: 1em;
 }
 
 
 h1 {
-	margin: 40px;
+	margin-left: 40px;
 }
 
 h2 {
-	margin: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 1em;
 }
 
 p {
-	margin: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
-
+footer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
 /* @end */
 
@@ -115,6 +116,7 @@ p {
 	margin-left: 65%;
 }
 
+
 /* @end */
 
 
@@ -125,6 +127,8 @@ p {
 	height: 70px;
 	background: url(../img/logo-gill-hei.png) no-repeat;
 }
+
+
 
 /* @end */
 
