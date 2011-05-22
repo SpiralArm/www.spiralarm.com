@@ -74,6 +74,7 @@ nav ul li {
 
 section {
 	padding-bottom: 100%;
+	clear: both;
 }
 
 nav {
