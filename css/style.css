@@ -81,7 +81,7 @@ aside h1 {
 	margin: 0;
 }
 
-x-section {
+section {
 	padding-bottom: 100%;
 }
 
@@ -112,13 +112,21 @@ p {
 /* @group Position */
 
 #logo {
-	margin-left: 60%;	
+	margin-left: 65%;
 }
 
 /* @end */
 
 
+/* @group Logo */
 
+#logo {
+	width: 257px;
+	height: 70px;
+	background: url(../img/logo-gill-hei.png) no-repeat;
+}
+
+/* @end */
 
 
 
