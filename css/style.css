@@ -104,6 +104,7 @@ h2 {
 p {
 	margin-left: 40px;
 	margin-right: 40px;
+	margin-bottom: 1em;
 }
 
 footer {
@@ -129,7 +130,8 @@ aside {
 
 aside {
 	float: right;
-	width: 30%;
+	width: 35%;
+	margin-right: 1em;
 }
 
 /* @end */
@@ -179,6 +181,15 @@ aside {
 /* @end */
 
 
+/* @group Aside */
+
+
+aside ul {
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+/* @end */
 
 
 /* @group Nav */
