@@ -120,6 +120,41 @@ footer {
 /* @end */
 
 
+/* @group Portfolio layout */
+
+ul#portfolio  {
+}
+
+
+#portfolio li {
+	list-style: none;
+	float: left;
+	border: 1pt solid silver;
+	margin: 1em;
+}
+
+#portfolio div {
+	width: 200px;
+	height: 200px;
+}
+
+#portfolio img {
+    display: block;
+  	margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+#portfolio p
+{
+    margin: 0.5em 0.5em 0.5em;
+    display: block;
+    text-align: center;
+}
+
+/* @end */
+
+
 /* @group Logo */
 
 #logo {
