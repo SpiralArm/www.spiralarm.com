@@ -44,6 +44,11 @@ h2 {
 	font-weight: lighter;
 }
 
+aside h1 {
+	font-size: 2em;
+	font-weight: lighter;
+}
+
 a {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -106,6 +111,11 @@ footer {
 	margin-bottom: 2em;
 }
 
+aside {
+	padding-bottom: 2em;
+}
+
+
 /* @end */
 
 
@@ -117,15 +127,15 @@ footer {
 	margin-left: 65%;
 }
 
+aside {
+	float: right;
+	width: 30%;
+}
 
 /* @end */
 
 
 /* @group Portfolio layout */
-
-ul#portfolio  {
-}
-
 
 #portfolio li {
 	list-style: none;
@@ -184,16 +194,6 @@ nav ul li {
 }
 
 
-
 /* @end */
 
-
-/* @group Aside */
-
-aside {
-}
-
-
-
-/* @end */
 
