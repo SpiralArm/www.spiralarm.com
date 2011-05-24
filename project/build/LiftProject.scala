@@ -13,11 +13,10 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclips
   override def libraryDependencies = Set(
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile->default" withSources(),
     "net.liftweb" %% "lift-mapper" % liftVersion % "compile->default" withSources(),
-
+    "net.liftmodules" %% "google-analytics" % "0.8",
+    
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "test",
-    "junit" % "junit" % "4.5" % "test",
-    "ch.qos.logback" % "logback-classic" % "0.9.26",
-    "org.scala-tools.testing" %% "specs" % "1.6.6" % "test",
-    "com.h2database" % "h2" % "1.2.138"
+    "ch.qos.logback" % "logback-classic" % "0.9.26"
+
   ) ++ super.libraryDependencies
 }
