@@ -1,230 +1,231 @@
-@CHARSET "UTF-8";
-
-
-body {
-  text-align:center;
-  font-family: 'Gill Sans', 'Trebuchet MS', 'Tahoma', sans-serif;
-  font-size: 16px;
-  color: #444444;
-  margin: 0;
-  padding: 0;
-}
-
-
-#header {
-    /*background:transparent url('../images/logoA.png') no-repeat;*/
-    position: relative;
-    top: 0;
-    left: 454px;
-    width:296px;
-    height: 134px;
-    border: none;
-}
-
-
-
- 
-#content{
-	width:750px;
-	margin: 0 auto;
-	text-align: left;
-	position: relative;
-/* 	border: red  solid; */
-
-}
-
-
-
-#pull_quote_body {
-    margin-left: 15px;   
-    font-size: 24px;
-    line-height: 34px;
-    width: 27em;
-    height: 5em;
-    /*border: green solid;*/
-}
-
-#pull_quote_navigation {
-    font-size: 14px;    
-}
-
-
-
-/* from http://www.alistapart.com/d/multicolumnlists/example1.html# */
-#learn_more ul, #get_in_touch ul
-{
-  width: 600px;  /* room for 2 columns */
-  list-style: square;    
-}
-
-#learn_more ul li, #get_in_touch ul li
-{
-  float: left;
-  width: 300px;  /* accommodate the widest item */
-  margin-bottom: 0;
-}
-/* stop the floating after the list */
-br
-{
-  clear: left;
-}
-
-
-
-#footer
-{
-    clear: both;
-    padding-top: 6em;
-    font-size: 12px;
-}
-
-#copyright {
-    float:left;
-}
-
-#footerlinks {
-    text-align: right;
-    /*padding-right: 15em;*/
-    /*    border: black solid; */
-}
-
-#footerlinks a {
-    padding-right: 2em;
-}
-
-
+/* @group Colour */
 
 a {
-    color: blueviolet;
-    /*font-weight: bold;*/
-    text-decoration: none;
-    line-height: 20px;
-    opacity: 1.00;
-
-    
-}
-a:visited {
-   color: purple;
+  color: #2296FB;
 }
 
-a:hover {
-    text-decoration: underline;
+nav {
+	border-top: 5pt solid #2296FB;
+}
+
+nav ul li {
+	background-color: #2296FB;
+	color: white;
+}
+
+a {
+	background-color: white;
+}
+
+.highlight {
+	padding: 0.5em;
+}
+
+/* @end */
+
+
+
+
+/* @group Font & text */
+
+* {
+	font: 14px/1.5 "Helvetica Neue";
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-family: 'Handwriting - Dakota','Arial','Gill Sans', sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: #000000;
+	font: 3em/1.2 "Helvetica Neue";
+	padding-bottom: 0.25em;
 }
 
 h2 {
-
-    font-family: 'Gill Sans', sans-serif;
-    font-size: 18px;
-    color: #000000;    
+	font-size: 125%;
+	font-weight: lighter;
 }
 
-h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: 18px;
-    color: #000000;
+aside h1 {
+	font-size: 2em;
+	font-weight: lighter;
 }
 
-b {
-    
-    font-weight: bold;
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: small;
+	font-weight: bolder;
 }
 
-ul
-{
-    list-style: square;
+nav ul li {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: small;
+	font-weight: bolder;
 }
 
-li
-{
-    margin-bottom: 1em; /* after each bullet point*/
+
+
+/* @end */
+
+
+
+/* @group spacing */
+
+* {
+	margin: 0;
+}
+
+section {
+	padding-bottom: 100%;
+	clear: both;
+}
+
+nav {
+	margin-bottom: 1em;
+}
+
+#logo {
+	margin-bottom: 1em;
 }
 
 
-/* For forms */
+h1 {
+	margin-left: 40px;
+}
 
-form label
-{
-	display: block;
-	float: left;
-	width: 5em;
+h2 {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 1em;
+}
+
+footer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+aside {
+	padding-bottom: 2em;
+}
+
+
+ul {
+	margin-left: 40px;
+	margin-bottom: 1em;
+}
+
+
+/* @end */
+
+
+
+
+/* @group Position */
+
+#logo {
+	margin-left: 65%;
+}
+
+aside {
+	float: right;
+	width: 35%;
 	margin-right: 1em;
 }
 
-form fieldset
-{
-    border: none;
+aside ul {
+	margin-left: 0;
 }
 
 
-/* OUR WORK  */
+/* @end */
 
-div.our_work_summary
-{
-    float: left;
-    height: 13em;
-    width: 13em;
-    background-color:#eeeeee;
-    margin: 1em;
+
+/* @group Portfolio layout */
+
+#portfolio li {
+	list-style: none;
+	float: left;
+	border: 1pt solid silver;
+	margin: 1em;
 }
 
-div.our_work_summary img
-{
-    border: solid black 1px;
+#portfolio div {
+	width: 200px;
+	height: 200px;
+}
+
+#portfolio img {
     display: block;
-    margin-left: auto;
+  	margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
 }
 
-div.our_work_summary p
+#portfolio p
 {
     margin: 0.5em 0.5em 0.5em;
     display: block;
     text-align: center;
 }
 
+/* @end */
 
 
-/* For images that require a border */
-img.thin-border
-{
-    border: black solid thin;
+/* @group Logo */
+
+#logo {
+	width: 257px;
+	height: 70px;
+	background: url(../img/logo-gill-hei.png) no-repeat;
 }
 
-/* Contact Us */
 
-.buttons {  
-    margin-top: 5px;
+
+/* @end */
+
+
+/* @group Whim */
+
+ul {
+	list-style-type: square;
 }
 
-.error {
-color: red;
-padding-left: 15px;
+/* @end */
+
+
+/* @group Aside */
+
+
+aside ul {
+	list-style-position: inside;
 }
 
-/* Blog related */
+/* @end */
 
-code
-{
-    font-family: 'Courier New','Courier', monospace;
-    font-size: 80%;
+
+/* @group Nav */
+
+
+nav ul {
+	display: inline;
+	margin: 0;
 }
 
-.sourcecode
-{
-    font-family: 'Courier New','Courier', monospace;
-    font-size: 80%;
-
-	margin: 10px;
-    padding: 0px; 
-
-    white-space: pre;
-
+nav ul li {
+	display: inline;
+	margin-left: 1em;
+	
 }
+
+
+/* @end */
+
+
