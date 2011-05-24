@@ -102,7 +102,7 @@ nav ul li {
 }
 
 section {
-	padding-bottom: 10%;
+	padding-bottom: 3em;
 	clear: both;
 }
 
@@ -117,7 +117,7 @@ h1 {
 }
 
 #home h1 {
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
 h2 {
@@ -133,8 +133,7 @@ p {
 }
 
 footer {
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 5em;
 }
 
 aside {
@@ -142,7 +141,15 @@ aside {
 }
 
 
-ul {
+aside header h1 {
+	padding-top: 1em;
+}
+
+aside header:first-child h1 {
+	padding-top: 0;
+}
+
+ul,ol {
 	margin-left: 40px;
 	margin-bottom: 1em;
 }
@@ -171,7 +178,6 @@ section#about p a img {
 	margin-left: 58%;
 	width: 278px;
 	height: 94px;
-	border: 1pt solid red;
 }
 
 aside {
@@ -189,6 +195,10 @@ aside ul {
 
 
 /* @group Portfolio layout */
+
+ul#portfolio {
+	float: left;
+}
 
 #portfolio li {
 	list-style: none;
