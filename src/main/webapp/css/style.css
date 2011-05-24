@@ -151,6 +151,10 @@ ul {
 }
 
 
+section#about p a img {
+	vertical-align: text-top;
+}
+
 /* @end */
 
 
