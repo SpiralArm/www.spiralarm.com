@@ -24,19 +24,22 @@ a {
 #logo {
 	background-color: #2296FB;
 	
+	background-image: -moz-linear-gradient(
+    	center bottom,
+	    rgb(35,121,250) 20%,
+	    rgb(34,150,251) 60%,
+	    rgb(34,150,251) 80%);
+
+
 	background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.2, rgb(35,121,250)),
-    color-stop(0.6, rgb(34,150,251)),
-    color-stop(0.8, rgb(34,150,251)) );
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(35,121,250) 20%,
-    rgb(34,150,251) 60%,
-    rgb(34,150,251) 80%);
-    
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.2, rgb(35,121,250)),
+	    color-stop(0.6, rgb(34,150,251)),
+	    color-stop(0.8, rgb(34,150,251)) );
+
+	    
     /* Rounded corners are so last year */
 
 }
@@ -164,8 +167,11 @@ section#about p a img {
 
 #logo {
 	position: absolute;
-	top: 0;
-	margin-left: 65%;
+	top: 6px;
+	margin-left: 58%;
+	width: 278px;
+	height: 94px;
+	border: 1pt solid red;
 }
 
 aside {
