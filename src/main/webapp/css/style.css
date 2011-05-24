@@ -21,6 +21,12 @@ a {
 	padding: 0.5em;
 }
 
+#logo {
+	background-color: #2296FB;
+	
+}
+
+
 /* @end */
 
 
@@ -78,7 +84,7 @@ nav ul li {
 }
 
 section {
-	padding-bottom: 100%;
+	padding-bottom: 10%;
 	clear: both;
 }
 
@@ -86,13 +92,14 @@ nav {
 	margin-bottom: 1em;
 }
 
-#logo {
-	margin-bottom: 1em;
-}
 
 
 h1 {
 	margin-left: 40px;
+}
+
+#home h1 {
+	margin-top: 2em;
 }
 
 h2 {
@@ -122,6 +129,10 @@ ul {
 	margin-bottom: 1em;
 }
 
+#logo {
+	padding-left: 18px;
+}
+
 
 /* @end */
 
@@ -131,6 +142,8 @@ ul {
 /* @group Position */
 
 #logo {
+	position: absolute;
+	top: 0;
 	margin-left: 65%;
 }
 
@@ -178,18 +191,6 @@ aside ul {
 
 /* @end */
 
-
-/* @group Logo */
-
-#logo {
-	width: 296px;
-	height:134px;
-	background: url(../img/LogoB.png) no-repeat;
-}
-
-
-
-/* @end */
 
 
 /* @group Whim */
