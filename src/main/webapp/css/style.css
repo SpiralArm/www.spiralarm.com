@@ -39,8 +39,6 @@ a {
 	    color-stop(0.6, rgb(34,150,251)),
 	    color-stop(0.8, rgb(34,150,251)) );
 
-	    
-
 }
 
 
@@ -48,6 +46,21 @@ a {
 a.button {
 	color: white;
 	background-color: #2296FB;
+	background-image: -moz-linear-gradient(
+    	center bottom,
+	    rgb(35,121,250) 20%,
+	    rgb(34,150,251) 60%,
+	    rgb(34,150,251) 80%);
+
+
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.2, rgb(35,121,250)),
+	    color-stop(0.6, rgb(34,150,251)),
+	    color-stop(0.8, rgb(34,150,251)) );
+
 }
 
 
