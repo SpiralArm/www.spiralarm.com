@@ -214,12 +214,8 @@ section#about p a img {
 /* @group Position */
 
 #logo img {
+	float: right;
 	margin-top: 8px;
-	margin-left: 38px;
-}
-
-nav ul {
-	float: right;	
 }
 
 
