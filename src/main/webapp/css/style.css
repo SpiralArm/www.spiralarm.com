@@ -22,6 +22,9 @@ a {
 }
 
 #logo {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
 	background-color: #2296FB;
 	
 	background-image: -moz-linear-gradient(
@@ -214,9 +217,7 @@ section#about p a img {
 /* @group Position */
 
 #logo {
-	position: absolute;
 	top: 6px;
-	margin-left: 62%;
 	width: 278px;
 	height: 94px;
 }
