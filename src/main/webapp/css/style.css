@@ -39,8 +39,27 @@ a {
 	    color-stop(0.6, rgb(34,150,251)),
 	    color-stop(0.8, rgb(34,150,251)) );
 
-	    
-    /* Rounded corners are so last year */
+}
+
+
+
+a.button {
+	color: white;
+	background-color: #2296FB;
+	background-image: -moz-linear-gradient(
+    	center bottom,
+	    rgb(35,121,250) 20%,
+	    rgb(34,150,251) 60%,
+	    rgb(34,150,251) 80%);
+
+
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.2, rgb(35,121,250)),
+	    color-stop(0.6, rgb(34,150,251)),
+	    color-stop(0.8, rgb(34,150,251)) );
 
 }
 
@@ -68,6 +87,7 @@ h2 {
 	font-weight: lighter;
 }
 
+
 aside h1 {
 	font-size: 2em;
 	font-weight: lighter;
@@ -77,9 +97,15 @@ a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-variant: small-caps;
-	font-size: small;
 	font-weight: bolder;
 }
+
+
+a.button {
+	font-weight: bold;
+}
+
+
 
 nav ul li {
 	text-transform: uppercase;
@@ -104,6 +130,7 @@ nav ul li {
 section {
 	padding-bottom: 3em;
 	clear: both;
+	min-height: 35em;
 }
 
 nav {
@@ -132,6 +159,15 @@ p {
 	margin-bottom: 1em;
 }
 
+a.button {
+	padding: 0.5em;
+	display: block;
+	margin-bottom: 1em;
+	width: 15em;
+	text-align: center;
+}
+
+
 footer {
 	margin-top: 5em;
 }
@@ -154,9 +190,14 @@ ul,ol {
 	margin-bottom: 1em;
 }
 
+ul ul {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
 #logo {
 	padding-left: 18px;
-	padding-bottom: 2px;
+	padding-bottom: 6px;
 	padding-top: 12px;
 }
 
@@ -175,7 +216,7 @@ section#about p a img {
 #logo {
 	position: absolute;
 	top: 6px;
-	margin-left: 58%;
+	margin-left: 62%;
 	width: 278px;
 	height: 94px;
 }
@@ -190,36 +231,35 @@ aside ul {
 	margin-left: 0;
 }
 
-
 /* @end */
 
 
 /* @group Portfolio layout */
 
-ul#portfolio {
+ul.portfolio {
 	float: left;
 }
 
-#portfolio li {
+.portfolio li {
 	list-style: none;
 	float: left;
 	border: 1pt solid silver;
 	margin: 1em;
 }
 
-#portfolio div {
+.portfolio div {
 	width: 200px;
 	height: 200px;
 }
 
-#portfolio img {
+.portfolio img {
     display: block;
   	margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
 }
 
-#portfolio p
+.portfolio p
 {
     margin: 0.5em 0.5em 0.5em;
     display: block;
@@ -234,6 +274,13 @@ ul#portfolio {
 
 ul {
 	list-style-type: square;
+}
+
+
+a.button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 /* @end */
