@@ -25,5 +25,9 @@ class Boot {
     LiftRules.uriNotFound.prepend{ case (req, _) => NotFoundAsResponse(PermRedirectResponse("/siteReorganized.html", req))}  
     LiftRules.exceptionHandler.prepend{ case (mode,req, throwable) => PermRedirectResponse("siteReorganized", req)}
 
+
+    bootstrap.liftmodules.GoogleAnalytics.init
+
+
   }
 }
