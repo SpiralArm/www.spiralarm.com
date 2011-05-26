@@ -5,11 +5,11 @@ a {
 }
 
 nav {
-	xborder-top: 0pt solid #2296FB;
+	border-top: 4pt solid #2296FB;
 }
 
 nav ul li {
-	background-color: #2379FA;
+	background-color: #2296FB;
 	color: white;
 }
 
@@ -127,6 +127,7 @@ section {
 
 nav {
 	margin-bottom: 1em;
+	padding-right: 3em;;
 }
 
 
@@ -213,7 +214,11 @@ section#about p a img {
 /* @group Position */
 
 #logo img {
-	float: right;
+	margin-left: 38px;
+}
+
+nav ul {
+	float: right;	
 }
 
 
@@ -226,6 +231,8 @@ aside {
 aside ul {
 	margin-left: 0;
 }
+
+
 
 /* @end */
 
