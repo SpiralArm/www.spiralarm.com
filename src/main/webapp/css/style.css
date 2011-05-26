@@ -66,7 +66,7 @@ a.button {
 /* @group Font & text */
 
 * {
-	font: lighter 14px/1.5 "Lucida Grande", Lucida, Verdana, sans-serif;
+	font:  14px/1.5 "Lucida Grande", Lucida, Verdana, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -89,8 +89,7 @@ aside h1 {
 a {
 	text-transform: uppercase;
 	text-decoration: none;
-	font-variant: small-caps;
-	font-weight: bolder;
+	font-weight: bolder;	
 }
 
 
