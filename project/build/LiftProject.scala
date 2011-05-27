@@ -22,6 +22,8 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclips
     
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "test",
     "ch.qos.logback" % "logback-classic" % "0.9.26",
+     "net.databinder" %% "dispatch-http" % "0.7.8" % "compile->default" withSources(),
+     "javax.servlet" % "servlet-api" % "2.5" % "provided->default",
 
     "junit" % "junit" % "4.5" % "test",
     "org.scala-tools.testing" %% "specs" % "1.6.6" % "test"
