@@ -355,6 +355,10 @@ nav ul li {
 	background-color: #fffeff;
 }
 
+aside a {
+	background-color: whitesmoke;
+}
+
 /* @end */
 /* @group Spacing */
 
