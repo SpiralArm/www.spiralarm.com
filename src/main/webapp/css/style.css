@@ -336,24 +336,19 @@ aside {
 
 nav ul {
 	display: block;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav ul li {
 	display: inline;
+	margin: 0px;
+	padding: 0px;	
 }
 
 
 /* @end */
 /* @group Colour */
-
-
-nav {
-	background-color: #ffffff;
-}
-
-nav ul li {
-	background-color: #fffeff;
-}
 
 aside a {
 	background-color: whitesmoke;
@@ -369,15 +364,15 @@ aside a {
 nav {
 	margin: 0px;
 	padding: 0px;	
-	margin-bottom: 1em;
-	padding-left: 1em;	
-	padding-right: 1em;
+	margin-bottom: 0em;
+	padding-left: 0em;	
+	padding-right: 0em;
 }
 
 nav ul li {
 	margin: 0px;
 	padding: 0px;	
-	margin-left: 1em;
+	margin-left: 0em;
 }
 
 ul,ol {
@@ -387,6 +382,13 @@ ul,ol {
 
 ul ul {
 	margin-right: 1em;
+}
+
+.highlight {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 0em;
+	padding-right: 0em;
 }
 
 
