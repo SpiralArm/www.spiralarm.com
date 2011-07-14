@@ -2,7 +2,7 @@ import sbt._
 import de.element34.sbteclipsify._
 
 class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclipsify  with bees.RunCloudPlugin {
-  val liftVersion = "2.3"
+  val liftVersion = "2.4-M2"
 
   override def beesUsername = Some("spiralarm")
   override def beesApplicationId = Some("spiralarm/spiralarm.com")	  
@@ -26,7 +26,7 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclips
      "javax.servlet" % "servlet-api" % "2.5" % "provided->default",
 
     "junit" % "junit" % "4.5" % "test",
-    "org.scala-tools.testing" %% "specs" % "1.6.6" % "test"
+    "org.specs2" %% "specs2" % "1.5" % "test"
     
   ) ++ super.libraryDependencies
 

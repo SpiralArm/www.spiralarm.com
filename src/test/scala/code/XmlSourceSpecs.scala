@@ -1,18 +1,14 @@
 package code
 
 import java.io.File
-
 import scala.xml.XML
 
-import org.specs.Specification
-import org.specs.runner.JUnit4
+import org.specs2.mutable._
 
 import net.liftweb.common.Full
 import net.liftweb.util.PCDataXmlParser
 
-class XmlSourceSpecsTest extends JUnit4(XmlSourceSpecs)
-
-object XmlSourceSpecs extends Specification {
+object XmlSourceSpecs extends SpecificationWithJUnit {
 
   "XML Sources" should {
     "be well-formed" in {
@@ -55,7 +51,7 @@ object XmlSourceSpecs extends Specification {
       if (numFails > 0) {
 	val fileStr = if (numFails == 1) "file" else "files"
 	val msg = "Malformed XML in " + numFails + " " + fileStr + ": " + failed.mkString(", ")
-	fail(msg)
+	failure(msg)
       }
       
       numFails must_== 0
