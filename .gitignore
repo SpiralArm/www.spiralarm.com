@@ -12,3 +12,6 @@
 /lift_proto.db.h2.db
 /lift_proto.db.lock.db
 tmp
+
+project/project/
+project/target/

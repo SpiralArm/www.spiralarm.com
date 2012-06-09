@@ -32,11 +32,5 @@ class Boot {
 
     bootstrap.liftmodules.GoogleAnalytics.init
 
-    Props.mode match {
-     case Props.RunModes.Production => CloudBeesKeepAlive.schedule
-     case _ =>
-    }
-
-
   }
 }
