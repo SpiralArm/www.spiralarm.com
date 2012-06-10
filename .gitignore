@@ -15,3 +15,5 @@ tmp
 
 project/project/
 project/target/
+project/LocalModuleDev.scala
+.cache

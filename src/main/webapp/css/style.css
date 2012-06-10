@@ -1,5 +1,32 @@
 /* @override http://localhost:8080/css/style.css */
 
+
+/* For the list of cookies we use */
+table {
+	width:80%;
+  margin-left: 40px;
+}
+
+tr > td {
+  padding-bottom: 1em;
+}
+
+table tr td {
+	vertical-align: top;
+}
+
+table tr th {
+	font-style: italic;
+	text-align: left;
+}
+
+
+/* For cookie notice */
+
+#cookie-notice {
+  margin: 0.4em;
+}
+
 /* @group Colour */
 
 a {

@@ -3,12 +3,12 @@ package bootstrap.liftweb
 import net.liftweb._
 import util._
 import Helpers._
-
 import common._
 import http._
 import sitemap._
 import Loc._
 import mapper._
+
 
 
 /**
@@ -29,8 +29,30 @@ class Boot {
       	case Req("sitemap" :: Nil, "xml", _) => false
     }
 
-
-    bootstrap.liftmodules.GoogleAnalytics.init
+    import bootstrap.liftmodules.GoogleAnalytics
+    import GoogleAnalytics.dsl._
+    
+    GoogleAnalytics.init
+    
+    GoogleAnalytics.alertUser( only when S.cookieValue("ckns_policy").isEmpty )  {
+      import net.liftweb.http.js._
+      import JE._ 
+      import JsCmds._
+      import net.liftweb.http.provider.HTTPCookie
+      
+      val oneYear = 365 * 24 * 60 * 60
+      S.addCookie( HTTPCookie("ckns_policy", "1").setPath("/").setMaxAge(oneYear) ) 
+ 
+      JsRaw("$('body').prepend('<div id=cookie-notice></div>')") &
+      JsRaw("$('body').delegate('#close', 'click', function() { $('#cookie-notice').hide(); })") &
+      SetHtml("cookie-notice", <div id="cookie-notice">
+          We use cookies to ensure that we give you the best experience on our website. 
+            If you continue we'll assume that you are happy to receive cookies. 
+            Our <a href="/cookies.html">cookie policy</a> page gives more details.  <a href="#close" id="close">Close</a> 
+          </div>)
+      
+    }
+    
 
   }
 }
