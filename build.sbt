@@ -4,23 +4,18 @@ version := "1.0"
 
 organization := "com.spiralarm"
  
-scalaVersion := "2.9.2" 
+scalaVersion := "2.10.3" 
 
 seq(webSettings :_*)
 
 scanDirectories in Compile := Nil
 
-resolvers += ScalaToolsSnapshots
-
-//  override def beesUsername = Some("spiralarm")
-//  override def beesApplicationId = Some("spiralarm/spiralarm.com")    
-
 resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
 libraryDependencies ++= {
-  val liftVersion = "2.5-SNAPSHOT" 
+  val liftVersion = "2.5.1" 
   Seq(
-    "net.liftmodules" %% "google-analytics" % (liftVersion+"-1.0-SNAPSHOT"),   
+    "net.liftmodules" %% "google-analytics_2.5" % "1.0",   
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-mapper" % liftVersion % "compile->default",
     "ch.qos.logback" % "logback-classic" % "0.9.29",
@@ -28,7 +23,6 @@ libraryDependencies ++= {
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "container"
     )
 }
-
 
 libraryDependencies ++= Seq(
     "junit" % "junit" % "4.5" % "test->default",
