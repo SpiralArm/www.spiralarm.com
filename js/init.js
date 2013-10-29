@@ -25,6 +25,4 @@ jQuery(function( $ ){
        recordEvent('external', this.href);
      } );
 	   
-
 });
-

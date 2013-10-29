@@ -5,13 +5,15 @@
     <title>Spiral Arm Ltd - Scala, Lift application development</title> 
     <link class="lift:with-resource-id" rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script> 
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
     <script type='text/javascript' src='js/jquery.scrollTo-1.4.2-min.js'></script> 
     <script type='text/javascript' src='js/jquery.localscroll-1.2.7-min.js'></script> 
-    <script class="lift:with-resource-id" type='text/javascript' src='js/init.js'></script> 
+    <script type='text/javascript' src='js/init.js'></script> 
     <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css' />
-    <script class="lift:Html5Shim"></script>
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -35,7 +37,6 @@
     <aside>
     <p>
          <a href="#about" class="button">get in touch</a>
-         <!--<a href="#work" class="button">Scroll on to learn more</a>-->
     </p>
         </aside> 
     <h2>
@@ -148,9 +149,6 @@
 
 </section>
 
-
-
-
 <section id="open">
    <header>
         <!--<nav><ul><li><a href="#home">Back to top</a></li></ul></nav>-->
@@ -158,32 +156,31 @@
     </header>
 
     <p>We get a buzz out of contributing to the Scala and Lift community, and by airing our learning we in turn benefit from the feedback of others.</p>
-        
-    <h2>Software</h2>
 
-    <ul>
-        <li>Lift Modules:
-          <ul>
-            <li><a href="https://github.com/d6y/liftmodules-googleanalytics">Google Analytics</a> - many projects need this, so it makes sense to provide it as a module.</li>
-            <li><a href="https://github.com/d6y/liftmodules-imap-idle">IMAP IDLE</a> - allows Lift apps to receive push email.</li>
-          </ul>                                
-        </li>
-        <li>Hudson/Jenkins <a href="https://github.com/jenkinsci/s3-plugin">S3 Plugin</a> - to automatically and reliably publish projects to Amazon S3.</li>
-    </ul>
-
-    <h2>Writing</h2>
-
-    <ul>
-        <li><a href="http://richard.dallaway.com/optionnull-is-none">Option(null) is None</a> - clues when working with legacy code, from <a href="http://richard.dallaway.com">Richard's technical blog</a>.</li>
-        <li><a href="http://richard.dallaway.com/in-praise-of-flatmap">In Praise of FlatMap</a> - comments on a great feature of functional programming.</li>
-    </ul>
-
-    <h2>Latest presentations and screencasts</h2>
+    <h2>Presentations</h2>
 
     <ul class="portfolio">
 
         <li>
-            <div><a href="http://www.slideshare.net/RichardDallaway/adding-machine-learning-to-a-web-app"><img src="img/bathcamp2011.jpg" alt="Frame from Adding Machine Learning to a Web App" width="141" height="116"></img></a>
+            <div><a href="https://speakerdeck.com/d6y/internet-the-things"><img src="img/bcb2012.png" alt="Frame Internet the Things!" width="141" height="116"></img></a>
+            <p><a href="https://speakerdeck.com/d6y/internet-the-things">NFC tag</a> presentation at <a href="http://lanyrd.com/2012/barcampbrighton/">BCB 7</a>.</p>
+            </div>
+        </li>
+
+        <li>
+            <div><a href="https://speakerdeck.com/d6y/distributedcometwithliftandsns"><img src="img/sns.png" alt="Frame from Distributed comet" width="141" height="116"></img></a>
+            <p><a href="https://speakerdeck.com/d6y/distributedcometwithliftandsns">Distributed Comet tag</a> with Lift and Amazon.</p>
+            </div>
+        </li>
+
+        <li>
+            <div><a href="http://skillsmatter.com/podcast/scala/park-bench-discussion-3621"><img src="img/pb2012.png" alt="Frame from scala exchange park bench session" width="141" height="116"></img></a>
+            <p><a href="http://skillsmatter.com/podcast/scala/park-bench-discussion-3621">Park Bench Discussion</a> at Scala eXchange 2012.</p>
+            </div>
+        </li>
+
+        <li>
+            <div><a href="https://speakerdeck.com/d6y/adding-machine-learning-to-a-web-app"><img src="img/bathcamp2011.jpg" alt="Frame from Adding Machine Learning to a Web App" width="141" height="116"></img></a>
             <p><a href="http://www.slideshare.net/RichardDallaway/adding-machine-learning-to-a-web-app">Machine learning in web apps</a> presentation at <a href="http://lanyrd.com/2011/artificial-intelligence-night/">AI Night</a>.</p>
             </div>
         </li>
@@ -240,13 +237,11 @@
             <h1>Meet us at these events</h1>
         </header>
         <ul>
+            <li><a href="http://skillsmatter.com/event/scala/scala-exchange-2013">Scala eXchange, London</a>, Dec 2-3, 2013</li>
             <li><a href="http://lsug.org">Scala London User Group</a>, 2nd Wednesday of most months.</li>
             <li><a href="http://www.meetup.com/scalasyd/">Scala in Sydney</a>, a Wednesday each month.</li> 
             <li><a href="http://www.meetup.com/Functional-Brighton/">Brighton Functional Meet up</a>, 3rd Tuesday of every month.</li>
-            <li><a href="http://www.facebook.com/group.php?gid=47737271928">Sydney Java Users Group</a>, 2nd Thursday of each month, Sydney.</li>
-        </ul>
-
-                                
+        </ul>      
     </aside>
 
      <p>Spiral Arm was founded in 2003 by Richard Dallaway and Jonathan Ferguson to build applications for the web and mobile devices. We're a software
@@ -263,11 +258,9 @@
      
     <p>The company is registered with Companies House in England and Wales as company number 4899633 and is based in Brighton (approximately 50 minutes from central London).</p>     
     <footer>
-        <p>&#169; Spiral Arm Ltd 2003&#8211;<span class="lift:DateTime.year">2011</span>, <a href="privacy.html">Privacy Statement</a>, <a href="cookies.html">How we use cookies</a>. </p>
+        <p>&#169; Spiral Arm Ltd 2003&#8211;2013, <a href="privacy.html">Privacy Statement</a>, <a href="cookies.html">How we use cookies</a>. </p>
     </footer>
 </section>
-
-
 
 
 </body>
