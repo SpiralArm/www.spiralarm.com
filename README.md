@@ -10,4 +10,4 @@ There is also a bucket called `www.spiralarm.com` which simply redirects to `spi
 
 The DNS is with Route53
 
-The domain is registered with Go Daddy.
+The domain is registered with iwantmyname.com.
