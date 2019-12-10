@@ -1,17 +1,15 @@
 /* @override http://localhost:8080/css/style.css */
 
-
 /* @group Colour */
 
 a {
-  color: #25aae1;
-	background-color: white;
+	color: #25aae1;
 }
 
 nav {
 	border-top: 4pt solid #25aae1;
-  margin:0;
-  padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
@@ -19,16 +17,14 @@ nav ul li {
 	color: white;
 }
 
-
 /* @end */
-
 
 /* @group Font & text */
 
 * {
-	font-size:  14px;
-  color: #444444;
-  font-family: 'Source Sans Pro', san-serif;
+	font-size: 14px;
+	color: #444444;
+	font-family: 'Source Sans Pro', san-serif;
 }
 
 h1 {
@@ -51,11 +47,9 @@ a {
 	text-decoration: none;
 }
 
-
 a.button {
 	font-weight: bold;
 }
-
 
 nav ul li {
 	text-transform: uppercase;
@@ -63,14 +57,13 @@ nav ul li {
 	font-variant: small-caps;
 }
 
-
 /* @end */
-
 
 /* @group spacing */
 
 * {
-  margin: 0em;
+	margin: 0em;
+	background-color: #F6F8FA;
 }
 
 section {
@@ -81,14 +74,13 @@ section {
 
 nav {
 	margin-bottom: 1em;
-	padding-right: 3em;;
+	padding-right: 3em;
+	;
 }
-
 
 h1 {
 	margin-left: 40px;
 	padding-bottom: 0.25em;
-
 }
 
 #home h1 {
@@ -114,144 +106,7 @@ p {
 	padding-right: 0.5em;
 }
 
-a.button {
-	padding: 0.5em;
-	display: block;
-	margin-bottom: 1em;
-	width: 15em;
-	text-align: center;
-}
-
-
-footer {
-	margin-top: 5em;
-}
-
-aside {
-	padding-bottom: 2em;
-}
-
-
-aside header h1 {
-	padding-top: 1em;
-}
-
-aside header:first-child h1 {
-	padding-top: 0;
-}
-
-ul,ol {
-	margin-left: 40px;
-	margin-bottom: 1em;
-}
-
-ul ul {
-	margin-left: 0;
-	margin-bottom: 0;
-}
-
-#logo {
-	padding-bottom: 20px;
-	padding-right: 5%
-}
-
-
-section#about p a img {
-	vertical-align: text-top;
-}
-
-/* @end */
-
-
-
-
-/* @group Position */
-
-#logo img {
-	float: right;
-	margin-top: 8px;
-}
-
-
-aside {
-	float: right;
-	width: 35%;
-	margin-right: 1em;
-}
-
-aside ul {
-	margin-left: 0;
-}
-
-
-
-/* @end */
-
-
-/* @group Portfolio layout */
-
-ul.portfolio {
-	float: left;
-}
-
-.portfolio li {
-	list-style: none;
-	float: left;
-	border: 1pt solid silver;
-	margin: 1em;
-}
-
-.portfolio div {
-	width: 200px;
-	height: 200px;
-}
-
-.portfolio img {
-    display: block;
-  	margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-
-.portfolio p
-{
-    margin: 0.5em 0.5em 0.5em;
-    display: block;
-    text-align: center;
-}
-
-/* @end */
-
-
-
-/* @group Whim */
-
-ul {
-	list-style-type: square;
-}
-
-
-a.button {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-/* @end */
-
-
-/* @group Aside */
-
-
-aside ul {
-	list-style-position: inside;
-}
-
-/* @end */
-
-
 /* @group Nav */
-
 
 nav ul {
 	display: inline;
@@ -260,90 +115,6 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	
-}
-
-
-/* @end */
-
-/* @group Mobile */
-
-
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-
-/* @group Position */
-
-aside {
-	margin-right: 1em;
-	float: none;
-	width: 90%;
-	background-color: whitesmoke;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;	
-}
-
-/* @end */
-/* @group Nav */
-
-nav ul {
-	display: block;
-}
-
-
-nav ul li {
-	display: inline;
-	margin: 0px;
-	padding: 0px;	
-}
-
-
-/* @end */
-/* @group Colour */
-
-aside a {
-	background-color: whitesmoke;
-}
-
-/* @end */
-/* @group Spacing */
-
-#home h1 {
-	margin-top: 0em;;
-}
-
-nav {
-	margin: 0px;
-	padding: 0px;	
-	margin-bottom: 0em;
-	padding-left: 0em;	
-	padding-right: 0em;
-}
-
-nav ul li {
-	margin: 0px;
-	padding: 0px;	
-	margin-left: 0em;
-}
-
-ul,ol {
-	margin-right: 1em;
-	margin-left: 1em;
-}
-
-ul ul {
-	margin-right: 1em;
-}
-
-.highlight {
-	padding: 0em;
-  margin: 0em;
-}
-
-
-
-/* @end */
-
 }
 
 /* @end */
