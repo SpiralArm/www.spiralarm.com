@@ -34,22 +34,6 @@ h1 {
 	font-weight: lighter;
 }
 
-h2 {
-	font-size: 125%;
-	font-weight: lighter;
-}
-
-aside h1 {
-	font-size: 2em;
-	font-weight: lighter;
-}
-
-a {}
-
-a.button {
-	font-weight: bold;
-}
-
 nav ul li {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -73,11 +57,11 @@ section {
 nav {
 	margin-bottom: 1em;
 	padding-right: 3em;
-	;
 }
 
 h1 {
 	margin-left: 40px;
+	margin-right: 40px;
 	padding-bottom: 0.25em;
 }
 
