@@ -1,33 +1,11 @@
 /* @override http://localhost:8080/css/style.css */
 
 
-/* For the list of cookies we use */
-table {
-	width:80%;
-  margin-left: 40px;
-}
-
-tr > td {
-  padding-bottom: 1em;
-}
-
-table tr td {
-	vertical-align: top;
-}
-
-table tr th {
-	font-style: italic;
-	text-align: left;
-}
-
-#cookie-notice {
-  margin: 0.4em;
-}
-
 /* @group Colour */
 
 a {
   color: #25aae1;
+	background-color: white;
 }
 
 nav {
@@ -41,9 +19,6 @@ nav ul li {
 	color: white;
 }
 
-a {
-	background-color: white;
-}
 
 /* @end */
 
@@ -51,23 +26,20 @@ a {
 /* @group Font & text */
 
 * {
-	font-size:  14px/1.5 ;
+	font-size:  14px;
+  color: #444444;
   font-family: 'Source Sans Pro', san-serif;
-
-
 }
 
 h1 {
 	font-size: 260%;
 	font-weight: lighter;
-  color: #444444;
 }
 
 h2 {
 	font-size: 125%;
 	font-weight: lighter;
 }
-
 
 aside h1 {
 	font-size: 2em;
@@ -92,9 +64,7 @@ nav ul li {
 }
 
 
-
 /* @end */
-
 
 
 /* @group spacing */
