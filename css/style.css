@@ -20,9 +20,6 @@ table tr th {
 	text-align: left;
 }
 
-
-/* For cookie notice */
-
 #cookie-notice {
   margin: 0.4em;
 }
@@ -30,15 +27,17 @@ table tr th {
 /* @group Colour */
 
 a {
-  color: #2296FB;
+  color: #25aae1;
 }
 
 nav {
-	border-top: 4pt solid #2296FB;
+	border-top: 4pt solid #25aae1;
+  margin:0;
+  padding:0;
 }
 
 nav ul li {
-	background-color: #2296FB;
+	background-color: #25aae1;
 	color: white;
 }
 
@@ -46,61 +45,21 @@ a {
 	background-color: white;
 }
 
-#logo {
-	background-color: #2296FB;
-	height: 80px;
-	
-	background-image: -moz-linear-gradient(
-    	center bottom,
-	    rgb(35,121,250) 20%,
-	    rgb(34,150,251) 60%,
-	    rgb(34,150,251) 80%);
-
-	background-image: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.2, rgb(35,121,250)),
-	    color-stop(0.6, rgb(34,150,251)),
-	    color-stop(0.8, rgb(34,150,251)) );
-}
-
-
-
-a.button {
-	color: white;
-	background-color: #2296FB;
-	background-image: -moz-linear-gradient(
-    	center bottom,
-	    rgb(35,121,250) 20%,
-	    rgb(34,150,251) 60%,
-	    rgb(34,150,251) 80%);
-
-	background-image: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.2, rgb(35,121,250)),
-	    color-stop(0.6, rgb(34,150,251)),
-	    color-stop(0.8, rgb(34,150,251)) );
-
-}
-
-
 /* @end */
-
-
 
 
 /* @group Font & text */
 
 * {
-	font:  14px/1.5 "Lucida Grande", Lucida, Verdana, sans-serif;
-	-webkit-font-smoothing: antialiased;
+	font-size:  14px/1.5 ;
+  font-family: 'Source Sans Pro', san-serif;
+
+
 }
 
 h1 {
-	font: 3em/1.2 "Maven Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 260%;
+	font-weight: lighter;
 }
 
 h2 {
@@ -110,7 +69,6 @@ h2 {
 
 
 aside h1 {
-	font-family: "Maven Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
 	font-size: 2em;
 	font-weight: lighter;
 }
@@ -118,7 +76,6 @@ aside h1 {
 a {
 	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: bolder;	
 }
 
 
@@ -127,12 +84,10 @@ a.button {
 }
 
 
-
 nav ul li {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-variant: small-caps;
-	font-weight: bolder;
 }
 
 
@@ -144,7 +99,7 @@ nav ul li {
 /* @group spacing */
 
 * {
-	margin: 0;
+  margin: 0em;
 }
 
 section {
@@ -182,7 +137,7 @@ p {
 }
 
 .highlight {
-	padding-top: 0.2em;
+	padding-top: 0.5em;
 	padding-bottom: 0.2em;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -334,7 +289,6 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	margin-left: 1em;
 	
 }
 
@@ -363,9 +317,8 @@ aside {
 
 nav ul {
 	display: block;
-	margin: 0px;
-	padding: 0px;
 }
+
 
 nav ul li {
 	display: inline;
@@ -412,10 +365,8 @@ ul ul {
 }
 
 .highlight {
-	padding-top: 0em;
-	padding-bottom: 0em;
-	padding-left: 0em;
-	padding-right: 0em;
+	padding: 0em;
+  margin: 0em;
 }
 
 
